@@ -5,20 +5,24 @@ import { resolve } from 'path'
 export default defineConfig({
     plugins: [react()],
     build: {
+        lib: {
+            entry: resolve(__dirname, 'src/components/feed_search/index.tsx'),
+            name: 'FeedSearch',
+            fileName: 'feed_search',
+            formats: ['es'],
+        },
         rollupOptions: {
             external: ['react', 'react-dom'],
-            input: {
-                feed_search: resolve(__dirname, 'src/components/feed_search/index.tsx'),
-            },
             output: {
-                dir: 'dist',
-                format: 'es',
-                entryFileNames: '[name].mjs',
-                paths: {
-                    react: 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm',
-                    'react-dom': 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm'
+                globals: {
+                    react: 'React',
+                    'react-dom': 'ReactDOM'
                 }
             }
-        }
+        },
+        // Don't minify for better debugging
+        minify: false,
+        // Generate sourcemaps
+        sourcemap: true
     }
 })

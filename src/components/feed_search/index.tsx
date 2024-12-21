@@ -1,11 +1,18 @@
-import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm'
+// src/components/feed_search/index.tsx
+import React from 'react'
+import { MantineProvider, Button, TextInput } from '@mantine/core'
 import '@mantine/core/styles.css'
-import { MantineProvider, Button } from '@mantine/core'
 
-export default function YourComponent() {
+const FeedSearch = () => {
     return (
         <MantineProvider>
-            <Button>Feed search</Button>
+            <div style={{ padding: '20px' }}>
+                <TextInput placeholder="Search..." />
+                <Button>Search</Button>
+            </div>
         </MantineProvider>
     )
 }
+
+// Make sure to export as default
+export default FeedSearch

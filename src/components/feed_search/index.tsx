@@ -8,7 +8,7 @@ const FeedSearch = () => {
         <MantineProvider>
             <div style={{ padding: '20px' }}>
                 <TextInput placeholder="Search..." />
-                <Button>Search</Button>
+                <Button>Refresh feed</Button>
             </div>
         </MantineProvider>
     )

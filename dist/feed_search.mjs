@@ -4522,7 +4522,7 @@ TextInput.displayName = "@mantine/core/TextInput";
 const FeedSearch = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsx(MantineProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { padding: "20px" }, children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(TextInput, { placeholder: "Search..." }),
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { children: "Search" })
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { children: "Refresh feed" })
   ] }) });
 };
 export {

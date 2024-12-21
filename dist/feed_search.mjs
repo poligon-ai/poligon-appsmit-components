@@ -1,5 +1,5 @@
-import React, { createContext, useContext, useState, useRef, useEffect, useLayoutEffect, useMemo, useCallback, useId as useId$1, forwardRef, Fragment, createElement } from "react";
-import ReactDOM from "react-dom";
+import React, { createContext, useContext, useState, useRef, useEffect, useLayoutEffect, useMemo, useCallback, useId as useId$1, forwardRef, Fragment, createElement } from "https://cdn.jsdelivr.net/npm/react@18.2.0/+esm";
+import ReactDOM from "https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm";
 var jsxRuntime = { exports: {} };
 var reactJsxRuntime_production_min = {};
 /**

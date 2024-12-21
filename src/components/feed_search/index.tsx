@@ -1,5 +1,5 @@
 // src/components/feed_search/index.tsx
-import React from 'react'
+import React from 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm'
 import { MantineProvider, Button, TextInput } from '@mantine/core'
 import '@mantine/core/styles.css'
 
@@ -14,5 +14,4 @@ const FeedSearch = () => {
     )
 }
 
-// Make sure to export as default
 export default FeedSearch

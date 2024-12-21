@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import TestComponent from './TestComponent'
+import FeedSearch from './components/feed_search/index'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <TestComponent/>
+        <FeedSearch/>
     </React.StrictMode>
 )

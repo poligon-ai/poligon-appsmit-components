@@ -31,20 +31,21 @@ function requireReactJsxRuntime_production_min() {
   return reactJsxRuntime_production_min;
 }
 var reactJsxRuntime_development = {};
-/**
- * @license React
- * react-jsx-runtime.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 var hasRequiredReactJsxRuntime_development;
 function requireReactJsxRuntime_development() {
   if (hasRequiredReactJsxRuntime_development) return reactJsxRuntime_development;
   hasRequiredReactJsxRuntime_development = 1;
-  if (process.env.NODE_ENV !== "production") {
+  var define_process_env_default = {};
+  /**
+   * @license React
+   * react-jsx-runtime.development.js
+   *
+   * Copyright (c) Facebook, Inc. and its affiliates.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE file in the root directory of this source tree.
+   */
+  if (define_process_env_default.NODE_ENV !== "production") {
     (function() {
       var React$1 = React;
       var REACT_ELEMENT_TYPE = Symbol.for("react.element");
@@ -920,7 +921,8 @@ var hasRequiredJsxRuntime;
 function requireJsxRuntime() {
   if (hasRequiredJsxRuntime) return jsxRuntime.exports;
   hasRequiredJsxRuntime = 1;
-  if (process.env.NODE_ENV === "production") {
+  var define_process_env_default = {};
+  if (define_process_env_default.NODE_ENV === "production") {
     jsxRuntime.exports = requireReactJsxRuntime_production_min();
   } else {
     jsxRuntime.exports = requireReactJsxRuntime_development();
@@ -4535,4 +4537,4 @@ export {
   FeedSearch,
   PostList
 };
-//# sourceMappingURL=components.mjs.map
+//# sourceMappingURL=components_v2.mjs.map

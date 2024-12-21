@@ -4,11 +4,17 @@ import { resolve } from 'path'
 
 export default defineConfig({
     plugins: [react()],
+    define: {
+        // Add process.env
+        'process.env': {},
+        // Add global window object
+        'global': {},
+    },
     build: {
         lib: {
             entry: resolve(__dirname, 'src/index.ts'),
             name: 'Components',
-            fileName: 'components',
+            fileName: 'components_v2',
             formats: ['es'],
         },
         rollupOptions: {

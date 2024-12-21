@@ -4525,7 +4525,14 @@ const FeedSearch = () => {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { children: "Refresh feed" })
   ] }) });
 };
-export {
-  FeedSearch as default
+const PostList = () => {
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(MantineProvider, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { style: { padding: "20px" }, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(TextInput, { placeholder: "Posts..." }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Button, { children: "Post list" })
+  ] }) });
 };
-//# sourceMappingURL=feed_search.mjs.map
+export {
+  FeedSearch,
+  PostList
+};
+//# sourceMappingURL=components.mjs.map

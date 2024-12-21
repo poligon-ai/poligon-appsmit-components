@@ -6,9 +6,9 @@ export default defineConfig({
     plugins: [react()],
     build: {
         lib: {
-            entry: resolve(__dirname, 'src/components/feed_search/index.tsx'),
-            name: 'FeedSearch',
-            fileName: 'feed_search',
+            entry: resolve(__dirname, 'src/index.ts'),
+            name: 'Components',
+            fileName: 'components',
             formats: ['es'],
         },
         rollupOptions: {
@@ -19,7 +19,6 @@ export default defineConfig({
                     'react-dom': 'ReactDOM'
                 },
                 paths: {
-                    // Specify the exact CDN paths for external dependencies
                     'react': 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm',
                     'react-dom': 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm'
                 }

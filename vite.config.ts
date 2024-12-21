@@ -13,10 +13,10 @@ export default defineConfig({
         rollupOptions: {
             external: ['react', 'react-dom'],
             output: {
-                globals: {
-                    react: 'React',
-                    'react-dom': 'ReactDOM'
-                },
+                paths: {
+                    react: 'https://cdn.jsdelivr.net/npm/react@18.2.0/+esm',
+                    'react-dom': 'https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm'
+                }
             }
         }
     }

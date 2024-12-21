@@ -1,5 +1,5 @@
-import oe, { useState as Hr, useRef as dr, useEffect as K, useLayoutEffect as Xe, createContext as ae, useContext as yt, useMemo as qe, useCallback as Wt, useId as Je, forwardRef as U } from "react";
-import Ke from "react-dom";
+import oe, { useState as Hr, useRef as dr, useEffect as K, useLayoutEffect as Xe, createContext as ae, useContext as yt, useMemo as qe, useCallback as Wt, useId as Je, forwardRef as U } from "https://cdn.jsdelivr.net/npm/react@18.2.0/+esm";
+import Ke from "https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm";
 var Vr = { exports: {} }, vr = {};
 /**
  * @license React

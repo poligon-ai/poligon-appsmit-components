@@ -3041,7 +3041,7 @@ Er.displayName = "@mantine/core/Button";
 Er.Group = _t;
 Er.GroupSection = Et;
 function Fo() {
-  return /* @__PURE__ */ h.jsx(ye, { children: /* @__PURE__ */ h.jsx(Er, { children: "Hello from Component" }) });
+  return /* @__PURE__ */ h.jsx(ye, { children: /* @__PURE__ */ h.jsx(Er, { children: "Hello from Mantine Component" }) });
 }
 export {
   Fo as default

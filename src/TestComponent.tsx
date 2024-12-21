@@ -5,7 +5,7 @@ import { MantineProvider, Button } from '@mantine/core'
 export default function YourComponent() {
     return (
         <MantineProvider>
-            <Button>Hello from Component</Button>
+            <Button>Hello from Mantine Component</Button>
         </MantineProvider>
     )
 }
